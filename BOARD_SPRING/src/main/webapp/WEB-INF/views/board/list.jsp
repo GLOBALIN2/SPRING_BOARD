@@ -24,7 +24,7 @@
 		</tr>
 		
 		<c:forEach var="boardVO" items="${list}">
-		
+		<!-- 여기서 var와 EL 안의 boardVO는 board라고 바꿔 써도 된다(단, 어떻게 쓰든 위아래가 일치해야 한다) -->
 		<tr>
 			<td>${boardVO.seq}</td>
 			<td><a href="/board/read?seq=${boardVO.seq}">${boardVO.title}</a></td>
